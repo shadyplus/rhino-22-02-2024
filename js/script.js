@@ -46,12 +46,10 @@ const massange = [{
 }, {
     m: 'اسم هذا المنتج هو RHINOXX. وهو منتج تم تصنيعه بالجزائر  تم تصنيعه بمكونات تم إستيرادها من اوروبا و  شاركوا العديد من العلماء  أيضًا في تطويره. <br><br> <img src="img/prod.png" class="product-img" style="width: 100%; max-width: 240px;"> '
 }, {
-    m: "يبدأ مفعول RHINO XX من اليوم الأول لاستخدامه."
+    m: "يبدأ مفعول RHINOXX من اليوم الأول لاستخدامه."
 }, {
-    m: "وكانت النتائج مفاجئة للغاية لأخصائيي المسالك البولية. ما يقرب من 98 ٪ من جميع المرضى يتعافون دون انتكاسات. الآخرين تخلصوا تمامًا من الأعراض وأوقفوا العمليات الالتهابية في البروستاتا. "
+    m: "وكانت النتائج مفاجئة للغاية لأخصائيي المسالك البولية. ما يقرب من 98 ٪ من جميع المصابين يتخلصون من مشاكل البروستات  دون انتكاسات. الآخرين تخلصوا تمامًا من الأعراض وأوقفوا العمليات الالتهابية في البروستاتا. "
 },  {
-    m: 'هذه صور لإلتهاب البروستات و للأسف هذه المراحل من الممكن التعرض لها إذا كان لديك أي أعراض لالتهاب البروستات  <br> <br><img src="img/comm-photo3-135-arb.jpeg"> <br> <img src="img/comm2-92a-arb.jpg"> <br> <img src="img/comm6-abb-arb.jpg"> '
-}, {
     m: "تبلغ المدة المثالية لإستخدام هذا المكمل الغذائي ، والتي تأخذ في الاعتبار عمرك ومؤشر كتلة جسمك الحالي واسلوب حياتك ، في المتوسط حوالي 60 يومًا. "
 }, {
     m: "خلال هذه الفترة , سوف يتم تطهير جسمك تلوث الأوعية الدموية و تحسين عمل الوظيفة الجنسية لديك و التخلص من التهاب البروستات و ألامها .  "
@@ -64,7 +62,7 @@ var mass_id = 0,
     length_mass = 0,
     lengt_num_mas = 0,
     text = "",
-    speedtext = 55,
+    speedtext = 1,
     process = !0;
 
 function app() {
@@ -90,68 +88,68 @@ function myMassange(e) {
 }
 
 function question1() {
-    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question1M">   أقل من 5 كجم</span></div><div class="chat-content-buttons-gender-block"><span class="question1W">من 5 ل 10 كجم</span></div><div class="chat-content-buttons-gender-block"><span class="question1P">من 10 ل 15 كجم</span></div><div class="chat-content-buttons-gender-block"><span class="question1T">أكثر من 15 كجم</span></div></div>')
+    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question1M">   نادراً</span></div><div class="chat-content-buttons-gender-block"><span class="question1W">أحياناً</span></div><div class="chat-content-buttons-gender-block"><span class="question1P">لا</span></div><div class="chat-content-buttons-gender-block"><span class="question1T">نعم</span></div></div>')
 }
 
 function choise1() {
     $(".question1M").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أقل من 5 كجم"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("نادراً"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question1W").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("من 5 ل 10 كجم"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أحياناً"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question1P").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("من 10 ل 15 كجم"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("لا"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question1T").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أكثر من 15 كجم"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("نعم"), setTimeout(() => {
             process = !0
         }, 500)
     })
 }
 
 function question2() {
-    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question2M">الخصر و البطن</span></div><div class="chat-content-buttons-gender-block"><span class="question2W">الفخذين و الأرداف</span></div><div class="chat-content-buttons-gender-block"><span class="question2P">الذراعين او الساقين</span></div><div class="chat-content-buttons-gender-block"><span class="question2T">أنا اريد فقدان الوزن بالجسم كاملاً</span></div></div>')
+    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question2M">نادراً</span></div><div class="chat-content-buttons-gender-block"><span class="question2W">أحياناً</span></div><div class="chat-content-buttons-gender-block"><span class="question2P">لا</span></div><div class="chat-content-buttons-gender-block"><span class="question2T">نعم</span></div></div>')
 }
 
 function choise2() {
     $(".question2M").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("الخصر و البطن"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("نادراً"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question2W").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("الفخذين و الأرداف"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أحياناً"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question2P").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("الذراعين او الساقين "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("لا "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question2T").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أنا اريد فقدان الوزن بالجسم كاملاً"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("نعم"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     })
 }
 
 function question3() {
-    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question3M">أنا امارس الرياضة من  3 - 5 مرات بالأسبوع </span></div><div class="chat-content-buttons-gender-block"><span class="question3W">أنا امارس الرياضة من 1 - 3 مرات بالأسبوع </span></div><div class="chat-content-buttons-gender-block"><span class="question3P">أنا لا امارس الرياضة, و لكن أمشي كثيرا </span></div><div class="chat-content-buttons-gender-block"><span class="question3T">أسلوب حياتي مستقر إلي حد ما</span></div></div>')
+    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question3M">لا لدي ضعف انتصاب </span></div><div class="chat-content-buttons-gender-block"><span class="question3W">نعم  أحياناً يكون الإنتصاب قوي </span></div><div class="chat-content-buttons-gender-block"><span class="question3P">انا لا أستطيع ممارسة العلاقة منذ فترة طويلة  </span></div><div class="chat-content-buttons-gender-block"><span class="question3T">أسلوب حياتي مستقر إلي حد ما</span></div></div>')
 }
 
 function choise3() {
     $(".question3M").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أنا امارس الرياضة من  3 - 5 مرات بالأسبوع "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("لا لدي ضعف انتصاب "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question3W").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أنا امارس الرياضة من 1 - 3 مرات بالأسبوع "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("نعم  أحياناً يكون الإنتصاب قوي "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question3P").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أنا لا امارس الرياضة, و لكن أمشي كثيرا "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("انا لا أستطيع ممارسة العلاقة منذ فترة طويلة  "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question3T").click(() => {
@@ -162,24 +160,24 @@ function choise3() {
 }
 
 function question4() {
-    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question4M">طعام طبيعي, لا حلويات أو معجنات</span></div><div class="chat-content-buttons-gender-block"><span class="question4W">تقريباً 50% حلويات و 50% طعام طبيعي</span></div><div class="chat-content-buttons-gender-block"><span class="question4P">أنا احب الوجبات السريعة و الجاهزة و الحلويات </span></div><div class="chat-content-buttons-gender-block"><span class="question4T">أتناول اطعمة غير صحية كثيراً</span></div></div>')
+    $(".chat-content-list").append('<div class="chat-content-buttons-gender"><div class="chat-content-buttons-gender-block"><span class="question4M">نادراً</span></div><div class="chat-content-buttons-gender-block"><span class="question4W">أحياناً</span></div><div class="chat-content-buttons-gender-block"><span class="question4P">لا </span></div><div class="chat-content-buttons-gender-block"><span class="question4T">نعم</span></div></div>')
 }
 
 function choise4() {
     $(".question4M").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("طعام طبيعي, لا حلويات أو معجنات"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("نادراً"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question4W").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("تقريباً 50% حلويات و 50% طعام طبيعي"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أحياناً"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question4P").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أنا احب الوجبات السريعة و الجاهزة و الحلويات "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("لا "), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     }), $(".question4T").click(() => {
-        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("أتناول اطعمة غير صحية كثيراً"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
+        document.querySelector(".chat-content-buttons-gender").style.display = "none", myMassange("نعم"), $(".chat-content-buttons-gender").css("display", "none"), setTimeout(() => {
             process = !0
         }, 500)
     })
